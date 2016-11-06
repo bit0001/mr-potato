@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_mr_potato"
@@ -13,16 +14,94 @@
 
     <TextView
         android:id="@+id/mr_potato_title"
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textStyle="bold"
         android:text="Mr. Potato Head" />
 
-    <ImageView
-        android:id="@+id/mr_potato_body"
-        android:src="@drawable/body"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/body"
+            android:src="@drawable/body"
+            android:adjustViewBounds="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/hat"
+            android:visibility="invisible"
+            android:src="@drawable/hat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/eyebrows"
+            android:visibility="invisible"
+            android:src="@drawable/eyebrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/eyes"
+            android:visibility="invisible"
+            android:src="@drawable/eyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/ears"
+            android:visibility="invisible"
+            android:src="@drawable/ears"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/glasses"
+            android:visibility="invisible"
+            android:src="@drawable/glasses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/nose"
+            android:visibility="invisible"
+            android:src="@drawable/nose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/mouth"
+            android:visibility="invisible"
+            android:src="@drawable/mouth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/arms"
+            android:visibility="invisible"
+            android:src="@drawable/arms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/shoes"
+            android:visibility="invisible"
+            android:src="@drawable/shoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/mustache"
+            android:visibility="invisible"
+            android:src="@drawable/mustache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/mr_potato_parts"
