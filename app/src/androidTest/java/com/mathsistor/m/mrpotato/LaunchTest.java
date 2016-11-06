@@ -3,7 +3,6 @@ package com.mathsistor.m.mrpotato;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 import android.support.v7.app.ActionBar;
-import android.util.Log;
 
 import org.junit.Rule;
 import org.junit.Test;
@@ -16,10 +15,7 @@ import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
-
-/**
- * Created by m on 11/6/2016.
- */
+import static org.hamcrest.core.IsNot.not;
 
 @RunWith(AndroidJUnit4.class)
 public class LaunchTest {
@@ -31,11 +27,29 @@ public class LaunchTest {
     @Test
     public void testBasicUIIsDisplayed() throws Exception {
         ActionBar supportActionBar = mrPotatoActivityActivityTestRule.getActivity().getSupportActionBar();
-        assertThat(supportActionBar.isShowing(), is(false));
+        int[] ids = {
+                R.id.arms,
+                R.id.ears,
+                R.id.eyebrows,
+                R.id.eyes,
+                R.id.glasses,
+                R.id.hat,
+                R.id.mouth,
+                R.id.mustache,
+                R.id.nose,
+                R.id.shoes
+        };
 
+        assertThat(supportActionBar.isShowing(), is(false));
         onView(withId(R.id.mr_potato_title)).check(matches(withText("Mr. Potato Head")));
-        onView(withId(R.id.mr_potato_body)).check(matches(isDisplayed()));
         onView(withId(R.id.mr_potato_parts)).check(matches(isDisplayed()));
+        onView(withId(R.id.body)).check(matches(isDisplayed()));
+
+        for (int id: ids) {
+            onView(withId(id)).check(matches(not(isDisplayed())));
+        }
     }
+
+
 
 }
