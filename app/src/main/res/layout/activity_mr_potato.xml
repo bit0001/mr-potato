@@ -25,28 +25,71 @@
         android:layout_height="wrap_content" />
 
     <LinearLayout
-        android:orientation="vertical"
         android:id="@+id/mr_potato_parts"
-        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <CheckBox
-                android:text="you"
+                android:text="Hat"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent" />
 
             <CheckBox
-                android:text="me"
+                android:text="Eyebrows"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent" />
 
+            <CheckBox
+                android:text="Nose"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <CheckBox
+                android:text="Mustache"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <CheckBox
+                android:text="Arms"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:text="Eyes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <CheckBox
+                android:text="Glasses"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <CheckBox
+                android:text="Mouth"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <CheckBox
+                android:text="Ears"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <CheckBox
+                android:text="Shoes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
         </LinearLayout>
 
     </LinearLayout>
-
 
 </LinearLayout>
