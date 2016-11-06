@@ -41,7 +41,7 @@ public class LaunchTest {
         };
 
         assertThat(supportActionBar.isShowing(), is(false));
-        onView(withId(R.id.mr_potato_title)).check(matches(withText("Mr. Potato Head")));
+        onView(withId(R.id.mr_potato_title)).check(matches(withText(R.string.mr_potato_head)));
         onView(withId(R.id.mr_potato_parts)).check(matches(isDisplayed()));
         onView(withId(R.id.body)).check(matches(isDisplayed()));
 

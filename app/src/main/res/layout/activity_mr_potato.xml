@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:textSize="24dp"
         android:textStyle="bold"
-        android:text="Mr. Potato Head" />
+        android:text="@string/mr_potato_head" />
 
     <RelativeLayout
         android:layout_width="match_parent"
