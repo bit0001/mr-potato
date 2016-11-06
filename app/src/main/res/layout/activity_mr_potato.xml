@@ -93,22 +93,27 @@
             android:layout_height="wrap_content">
             <CheckBox
                 style="@style/checkbox_part"
+                android:id="@+id/hat_checkbox"
                 android:text="Hat" />
 
             <CheckBox
                 style="@style/checkbox_part"
+                android:id="@+id/eyebrows_checkbox"
                 android:text="Eyebrows" />
 
             <CheckBox
                 style="@style/checkbox_part"
+                android:id="@+id/nose_checkbox"
                 android:text="Nose" />
 
             <CheckBox
                 style="@style/checkbox_part"
+                android:id="@+id/mustache_checkbox"
                 android:text="Mustache" />
 
             <CheckBox
                 style="@style/checkbox_part"
+                android:id="@+id/arms_checkbox"
                 android:text="Arms" />
         </LinearLayout>
 
@@ -118,22 +123,27 @@
             android:layout_height="wrap_content">
             <CheckBox
                 style="@style/checkbox_part"
+                android:id="@+id/eyes_checkbox"
                 android:text="Eyes" />
 
             <CheckBox
                 style="@style/checkbox_part"
+                android:id="@+id/glasses_checkbox"
                 android:text="Glasses" />
 
             <CheckBox
                 style="@style/checkbox_part"
+                android:id="@+id/mouth_checkbox"
                 android:text="Mouth" />
 
             <CheckBox
                 style="@style/checkbox_part"
+                android:id="@+id/ears_checkbox"
                 android:text="Ears" />
 
             <CheckBox
                 style="@style/checkbox_part"
+                android:id="@+id/shoes_checkbox"
                 android:text="Shoes" />
         </LinearLayout>
 
